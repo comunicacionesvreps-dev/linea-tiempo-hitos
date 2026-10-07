@@ -53,7 +53,8 @@
   .trigger summary::-webkit-details-marker{ display:none; }
   .trigger summary::before{ content:'+'; color:var(--ink-soft); flex:0 0 auto; }
   .trigger[open] summary::before{ content:'–'; }
-  .trigger p{ margin:0 0 12px; font-size:13px; color:var(--ink-soft); line-height:1.5; padding-left:16px; }
+  .trigger ul{ margin:0 0 12px; padding-left:34px; font-size:13px; color:var(--ink-soft); line-height:1.5; }
+  .trigger li + li{ margin-top:6px; }
   @keyframes sidebarPulse{ 0%,100%{ box-shadow:inset 0 0 0 0 transparent; } 50%{ box-shadow:inset -5px 0 0 0 var(--ink-soft); } }
   #sidebar.pulse{ animation:sidebarPulse 1.2s ease-in-out 3; }
 
@@ -190,20 +191,27 @@
 <div id="sidebar">
   <h2>Activadores</h2>
   <details class="trigger">
-    <summary>Adaptarte rápido</summary>
-    <p>Una vez que tuviste que adaptarte rápido a algo completamente nuevo.</p>
+    <summary>Educación</summary>
+    <ul>
+      <li>Un curso o materia que te haya marcado.</li>
+      <li>Un logro que te genere orgullo.</li>
+    </ul>
   </details>
   <details class="trigger">
-    <summary>Superar algo difícil</summary>
-    <p>Un momento en que superaste algo que te costó más de lo esperado.</p>
+    <summary>Laboral</summary>
+    <ul>
+      <li>Un empleo que haya sido un antes y después para ti.</li>
+      <li>Alguna dificultad (desempleo, crisis en el trabajo, etc).</li>
+      <li>Algún ascenso, proyecto exitoso, inicio de un emprendimiento, etc.</li>
+    </ul>
   </details>
   <details class="trigger">
-    <summary>Un cambio de rumbo</summary>
-    <p>Una decisión que, viéndola ahora, cambió tu rumbo sin que lo notaras en su momento.</p>
-  </details>
-  <details class="trigger">
-    <summary>Un logro silencioso</summary>
-    <p>Un logro del que te sientes orgulloso, pero que casi nunca mencionas.</p>
+    <summary>Personal</summary>
+    <ul>
+      <li>Un viaje significativo.</li>
+      <li>Una crisis que enfrentaste.</li>
+      <li>Una decisión (rupturas, mudanzas, etc).</li>
+    </ul>
   </details>
 </div>
 
